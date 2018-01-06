@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Model</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+            </head>
+    <body class="container">
+        <h1> Userlist </h1>
+        <form method="POST" action="/user">
+            <div class="input-group">
+                <input type="text" name="username" class="form-control">
+                <span class="input-group-btn">
+                    <input class="btn btn-default" type="submit" value="submit" />
+                </span>
+            </div>
+        </form>
+        #loop(userlist, "user") {
+        <div class="row">
+            <div class="col-xs-12">
+                #(user.username)
+            </div>
+        </div>
+        }
+    </body>
+</html>
