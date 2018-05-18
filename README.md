@@ -7,4 +7,4 @@
 </p>
 
 ## Community 🚀
-Join the awesome and welcoming Vapor community in <a href="http://vapor.team/"><b>Slack!</b></a>
+Join the awesome and welcoming Vapor community in <a href="http://vapor.team/"><b>Discord!</b></a>
