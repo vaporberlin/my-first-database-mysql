@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Model</title>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
             </head>
     <body class="container">
         <h1 class="mt-3"> Userlist </h1>
@@ -10,12 +10,16 @@
             <div class="input-group">
                 <input type="text" name="username" class="form-control">
                 <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="submit">Create</button>
+                    <button class="btn btn-outline-secondary" type="submit">
+                        Create
+                    </button>
                 </div>
             </div>
         </form>
         #for(user in userlist) {
-            <p class="mb-0"> #(user.username) </p>
+            <p class="mb-0">
+                #(user.username)
+            </p>
         }
     </body>
 </html>
