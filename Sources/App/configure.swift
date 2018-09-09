@@ -14,12 +14,11 @@ public func configure(
     try routes(router)
     services.register(router, as: Router.self)
 
-    let myService = NIOServerConfig.default(port: 8005)
-    services.register(myService)
-
-    try services.register(LeafProvider())
-    try services.register(FluentMySQLProvider())
+    let leafProvider = LeafProvider()
+    try services.register(leafProvider)
     config.prefer(LeafRenderer.self, for: ViewRenderer.self)
+
+    try services.register(FluentMySQLProvider())
 
     let mysqlConfig = MySQLDatabaseConfig(
         hostname: "127.0.0.1",
